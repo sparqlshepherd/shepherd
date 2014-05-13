@@ -1,0 +1,5 @@
+select * where {
+?s1 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'binds' .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp1.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p1.
+}

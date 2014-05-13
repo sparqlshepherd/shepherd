@@ -1,0 +1,5 @@
+select * where {
+?s5 <http://prelex.publicdata.eu/ontology/directory_code> "11.40.10.30"@en .
+?s5 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s6 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+}

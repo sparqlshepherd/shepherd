@@ -1,0 +1,8 @@
+select * where {
+?p <http://dbpedia.org/property/currentMembers> <http://dbpedia.org/resource/Gustavo_Dudamel>.
+?p <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1. 
+?p <http://purl.org/dc/terms/subject> ?ss1.
+?p <http://dbpedia.org/ontology/activeYearsStartYear> ?ac1.
+?p <http://dbpedia.org/ontology/bandMember> ?bm1.
+?p <http://dbpedia.org/property/currentMembers> ?cm1.}
+

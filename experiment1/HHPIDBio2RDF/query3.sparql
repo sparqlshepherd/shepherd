@@ -1,0 +1,7 @@
+select * where {
+?s3 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'recruits' .
+?s4 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'upregulates' .
+?s3 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp3.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp4.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p3.
+}

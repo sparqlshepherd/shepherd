@@ -1,0 +1,5 @@
+select * where {
+?s8 <http://www.w3.org/2004/02/skos/core#broader> <http://id.sgcb.mcu.es/Autoridades/LEM201008064/concept> .
+?s9 <http://www.w3.org/2004/02/skos/core#broader> <http://id.sgcb.mcu.es/Autoridades/LEM201007130/concept> .
+?s8 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+}

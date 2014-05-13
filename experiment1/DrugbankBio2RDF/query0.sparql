@@ -1,0 +1,6 @@
+select * where {
+?d1 <http://bio2rdf.org/drugbank_vocabulary:category> 'Antibiotics, Antifungal'. 
+?d2 <http://bio2rdf.org/drugbank_vocabulary:category> 'Antiviral Agents'.
+?d1 <http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in> ?i.
+?d2 <http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in> ?i.
+}

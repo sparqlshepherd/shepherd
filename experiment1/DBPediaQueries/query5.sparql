@@ -1,0 +1,10 @@
+select * where {
+ ?d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/class/yago/Antibody115027189>.
+ ?d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/class/yago/MonoclonalAntibody115029781>.
+ ?d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/class/yago/OrganicCompound114727670>.
+ ?d1 <http://dbpedia.org/ontology/atcPrefix> ?o.
+ ?d2 <http://dbpedia.org/ontology/atcPrefix> ?o.
+ ?d3 <http://dbpedia.org/ontology/atcPrefix> ?o.
+ ?d3 <http://dbpedia.org/property/drugbank> ?dg3.
+}
+                

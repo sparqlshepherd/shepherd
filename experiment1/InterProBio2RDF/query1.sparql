@@ -1,0 +1,7 @@
+select * where {
+?s1 <http://bio2rdf.org/interpro_vocabulary:contains> ?x.
+?s1 <http://purl.org/dc/terms/rights> ?r.
+?s1 <http://purl.org/dc/terms/creator> ?c.
+?s1 <http://purl.org/dc/terms/publisher> ?p.
+?s1 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.
+}

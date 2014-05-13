@@ -1,0 +1,8 @@
+select * where {
+?s3 <http://www.w3.org/ns/dcat#keyword> "format-obo" .
+?s4 <http://www.w3.org/ns/dcat#keyword> "format-owl" .
+?s3 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s3 <http://purl.org/dc/terms/relation> ?r3 .
+?s4 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s4 <http://purl.org/dc/terms/relation> ?r4 .
+}

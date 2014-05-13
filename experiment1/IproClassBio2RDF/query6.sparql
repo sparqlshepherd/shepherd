@@ -1,0 +1,6 @@
+select * where {
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:30696792> .
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g3.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu3 .
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn3.
+}

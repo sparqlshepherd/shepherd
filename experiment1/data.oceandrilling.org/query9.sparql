@@ -1,0 +1,7 @@
+select * where {
+?s3 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/BalanceSheetClassified".
+?s3 <http://www.openlinksw.com/schemas/xbrl/order> ?o3.
+?s3 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
+?s3 <http://www.openlinksw.com/schemas/xbrl/to> ?t3 .
+?s3 <http://www.openlinksw.com/schemas/xbrl/from> ?f3 .
+}

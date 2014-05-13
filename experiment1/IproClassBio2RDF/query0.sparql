@@ -1,0 +1,5 @@
+select * where {
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?p.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?p.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g1.
+}

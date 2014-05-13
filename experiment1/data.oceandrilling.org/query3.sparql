@@ -1,0 +1,6 @@
+select * where {
+?s1 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/ExplanatoryDisclosures".
+?s1 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s2 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s3 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+}

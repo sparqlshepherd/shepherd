@@ -1,0 +1,6 @@
+select * where {
+?s1 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> <http://bio2rdf.org/refseq:NP_036340>.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:keyword> ?k .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id1 .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?eg1.
+}

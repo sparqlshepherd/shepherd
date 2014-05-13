@@ -1,0 +1,5 @@
+select * where {
+ ?d3 <http://bio2rdf.org/drugbank_vocabulary:category> 'Small molecule'.
+ ?d3 <http://bio2rdf.org/drugbank_vocabulary:indication> ?i3.
+ ?i3 ?p ?o .  
+}

@@ -1,0 +1,9 @@
+select *  where {
+?s1 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CashFlowIndirect".
+?s1 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
+?s2 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/ExplanatoryDisclosures".
+?s2 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
+?s3 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/BalanceSheetClassified".
+?s3 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
+?s4 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CurrentNonCurrent" .
+?s4 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.}

@@ -1,0 +1,8 @@
+select * where {
+?d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t2.
+?d2 <http://dbpedia.org/property/routesOfAdministration> ?o2.
+?d2 <http://dbpedia.org/ontology/casNumber> "428863-50-7"@en.
+?d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t2.
+?d3 <http://dbpedia.org/property/routesOfAdministration> ?o3.
+?d3 <http://dbpedia.org/ontology/casNumber> ?number3.
+}               

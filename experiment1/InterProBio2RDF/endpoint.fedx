@@ -1,0 +1,6 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://Interpro> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://interpro.bio2rdf.org/sparql".
+<http://HHPID> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://hhpid.bio2rdf.org/sparql".

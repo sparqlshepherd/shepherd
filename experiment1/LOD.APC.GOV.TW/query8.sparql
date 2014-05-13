@@ -1,0 +1,7 @@
+select * where {
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/id>  '203'.
+}

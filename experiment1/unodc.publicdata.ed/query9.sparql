@@ -1,0 +1,9 @@
+select * where {
+?s4 <http://prelex.publicdata.eu/ontology/directory_code> "11.70.40.20"@en .
+?s4 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s5 <http://prelex.publicdata.eu/ontology/directory_code> "11.40.10.30"@en .
+?s5 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s6 <http://prelex.publicdata.eu/ontology/directory_code> "11.40.10.20"@en .
+?s6 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s6 <http://prelex.publicdata.eu/ontology/doc_id> ?did6 .
+}

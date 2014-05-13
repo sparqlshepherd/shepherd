@@ -1,0 +1,5 @@
+SELECT * WHERE {
+?d2 <http://dbpedia.org/ontology/casNumber> "428863-50-7"@en.
+?d2 <http://dbpedia.org/ontology/drugbank> ?sm2.
+?d2 <http://dbpedia.org/ontology/atcPrefix> ?c2.
+}

@@ -1,0 +1,6 @@
+select * where {
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Dietary supplement'. 
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Nutraceutical'.
+?d <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s.
+?d <http://bio2rdf.org/drugbank_vocabulary:biotransformation> ?b.
+?b ?p ?o.}

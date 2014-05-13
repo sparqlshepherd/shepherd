@@ -1,0 +1,10 @@
+select * where {
+ ?d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1.
+ ?d1 <http://dbpedia.org/ontology/atcPrefix> ?o1.
+ ?d1 <http://dbpedia.org/ontology/casNumber> ?p1.
+ ?d1 <http://dbpedia.org/property/chemspiderid> ?sm1.
+ ?d1 <http://dbpedia.org/property/target> ?k1.
+ ?d1 <http://dbpedia.org/property/routesOfAdministration> ?o.
+ ?d1 <http://dbpedia.org/property/smile> ?sm.
+ ?d1 <http://dbpedia.org/property/stdinchikey> ?s1.
+}

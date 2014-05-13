@@ -1,0 +1,8 @@
+select * where {
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:81941549>.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:49237304>.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:49237298> .
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn1.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn2.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn3.
+}

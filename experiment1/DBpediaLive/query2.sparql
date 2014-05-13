@@ -1,0 +1,8 @@
+select * where {
+?p <http://dbpedia.org/property/associatedActs> <http://dbpedia.org/resource/Oscar_D'Le%C3%B3n>.
+?p <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t1. 
+?p <http://purl.org/dc/terms/subject> ?ss1.
+?p <http://dbpedia.org/ontology/associatedBand> ?bm1.
+?bm1 <http://dbpedia.org/ontology/individualisedPnd> ?pnd1.
+?bm1 <http://dbpedia.org/property/instrument> ?in1.
+?bm1 <http://dbpedia.org/property/associatedActs> ?act1.}

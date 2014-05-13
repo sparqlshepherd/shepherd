@@ -1,0 +1,5 @@
+select * where {
+?ab1 <http://xmlns.com/foaf/0.1/homepage> ?hm1.
+?ab1 <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> ?iPt1.
+?ab1 <http://dbpedia.org/property/hasPhotoCollection> ?yA1.
+}

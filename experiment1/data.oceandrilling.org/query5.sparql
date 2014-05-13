@@ -1,0 +1,5 @@
+select * where {
+?s6 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/TuplesAmountToAggregate" .
+?s6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl6 .
+?pl6 ?p ?o.
+}

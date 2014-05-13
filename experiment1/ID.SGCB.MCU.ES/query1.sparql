@@ -1,0 +1,7 @@
+select * where {
+?s1 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://id.loc.gov/authorities/sh85083779#concept>.
+?s1 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s1 <http://purl.org/dc/terms/created> ?c1.
+?s1 <http://purl.org/dc/terms/modified> ?m1.
+?s1 <http://www.w3.org/2004/02/skos/core#broader> ?cb1.
+}

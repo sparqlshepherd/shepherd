@@ -1,0 +1,8 @@
+select * where {
+?s2 <http://prelex.publicdata.eu/ontology/directory_code> "06.20.20.25"@en.
+?s2 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s2 <http://prelex.publicdata.eu/ontology/doc_id> ?did2 .
+?s2 <http://prelex.publicdata.eu/ontology/event> ?e2 .
+?s2 <http://prelex.publicdata.eu/ontology/perma_url> ?pu2 .
+?s2 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad2 .
+}

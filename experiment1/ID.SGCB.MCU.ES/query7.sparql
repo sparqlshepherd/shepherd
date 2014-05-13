@@ -1,0 +1,8 @@
+select * where {
+?s3 <http://www.w3.org/2004/02/skos/core#narrower> <http://id.sgcb.mcu.es/Autoridades/LEM201007297/concept>.
+?s3 <http://www.w3.org/2004/02/skos/core#prefLabel> ?l.
+?s3 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201007318/concept> .
+?s3 <http://purl.org/dc/terms/created> ?c1.
+?s4 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.bnf.fr/ark:/12148/cb119563125>.
+?s4 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+}

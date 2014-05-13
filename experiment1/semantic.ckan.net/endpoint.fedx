@@ -1,0 +1,7 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://SEMANTICCKAN> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://semantic.ckan.net/sparql/".
+
+<http://HHPID> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://hhpid.bio2rdf.org/sparql".

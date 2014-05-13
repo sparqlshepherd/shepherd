@@ -1,0 +1,1 @@
+<http://data.oceandrilling.org/sparql> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openlinksw.com/schemas/xbrl/role> <http://www.openlinksw.com/schemas/xbrl/order>  <http://www.openlinksw.com/schemas/xbrl/weight> <http://www.openlinksw.com/schemas/xbrl/to> <http://www.openlinksw.com/schemas/xbrl/from> <http://www.openlinksw.com/schemas/xbrl/preferredLabel> .

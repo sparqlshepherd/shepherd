@@ -1,0 +1,4 @@
+select * where {
+?s1 <http://www.openlinksw.com/schemas/xbrl/weight> ?w1.
+?s1 <http://www.openlinksw.com/schemas/xbrl/to> ?t1 .
+?s1 <http://www.openlinksw.com/schemas/xbrl/from> ?f1 .}

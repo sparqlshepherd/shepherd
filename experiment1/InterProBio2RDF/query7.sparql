@@ -1,0 +1,8 @@
+select * where {
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pdb> <http://bio2rdf.org/pdb:1c5z> .
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pdb> <http://bio2rdf.org/pdb:1ejn> .
+?s4 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d4.
+?s5 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d5.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp4.
+}

@@ -1,0 +1,6 @@
+select * where {
+?s7 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> <http://bio2rdf.org/refseq:YP_031579.1> .
+?s7 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g.
+?s7 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu7 .
+?s7 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn7.
+?s7 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr7. }

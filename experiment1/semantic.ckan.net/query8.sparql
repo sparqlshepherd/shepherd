@@ -1,0 +1,6 @@
+select * where {
+?s7 <http://www.w3.org/ns/dcat#keyword> "format-rdfg" .
+?s7 <http://www.w3.org/ns/dcat#distribution> ?d7 .
+?s7 <http://purl.org/dc/terms/contributor> ?ct .
+?s8 <http://purl.org/dc/terms/contributor> ?ct .
+}

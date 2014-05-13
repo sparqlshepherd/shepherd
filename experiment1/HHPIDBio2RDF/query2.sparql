@@ -1,0 +1,6 @@
+select * where {
+?s1 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'downregulates'.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'inhibits' .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp1 .
+?s2 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp2 .
+}

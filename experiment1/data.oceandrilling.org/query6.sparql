@@ -1,0 +1,5 @@
+select * where {
+<http://www.openlinksw.com/schemas/xbrl/ifrs-gp_Calculation_TuplesAmountToAggregate--AggregateAmountOfNetProfitLossOfJointVentures_to_AmountOfNetProfitLossOfJointVenture> <http://www.openlinksw.com/schemas/xbrl/role>  ?role .
+?s <http://www.openlinksw.com/schemas/xbrl/role> ?role .
+?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o .
+}

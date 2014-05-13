@@ -1,0 +1,9 @@
+select * where {
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'JournalArticle'.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:affiliation> ?af1.
+?s1 <http://purl.org/dc/terms/abstract> ?ab1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow1.
+?s1 <http://purl.org/dc/terms/identifier> ?i1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm.
+}

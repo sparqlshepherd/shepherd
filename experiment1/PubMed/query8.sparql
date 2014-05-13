@@ -1,0 +1,7 @@
+select * where {
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> 'Print'.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:investigator> ?i1.
+?i1 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:number_of_references> ?r1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?a1.
+}

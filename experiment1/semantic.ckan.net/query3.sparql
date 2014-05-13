@@ -1,0 +1,7 @@
+select * where {
+?s1 <http://www.w3.org/ns/dcat#keyword> "format-rdf" .
+?s2 <http://www.w3.org/ns/dcat#keyword> "lod" .
+?s1 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s2 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s3 <http://www.w3.org/ns/dcat#distribution> ?d .
+}

@@ -1,0 +1,7 @@
+select * where {
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> <http://bio2rdf.org/refseq:YP_031581.1> .
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> <http://bio2rdf.org/refseq:YP_031585.1> .
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn3.
+}

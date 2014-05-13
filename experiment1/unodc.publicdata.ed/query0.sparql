@@ -1,0 +1,9 @@
+select * where {
+?s1 <http://prelex.publicdata.eu/ontology/directory_code> ?d1.
+?s1 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s1 <http://prelex.publicdata.eu/ontology/doc_id> ?did1 .
+?s1 <http://prelex.publicdata.eu/ontology/event> ?e1 .
+?s1 <http://prelex.publicdata.eu/ontology/perma_url> ?pu1 .
+?s1 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad1 .
+?s1 <http://purl.org/dc/terms/title> ?t1 .
+}

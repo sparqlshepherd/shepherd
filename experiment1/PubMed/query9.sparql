@@ -1,0 +1,6 @@
+select * where {
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'JournalArticle'.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow.
+?s2  <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'EvaluationStudies'.
+?s2 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow.
+}

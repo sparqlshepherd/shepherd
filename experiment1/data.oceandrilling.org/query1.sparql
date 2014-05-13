@@ -1,0 +1,5 @@
+select * where {
+?s4 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CashFlowIndirectFinancialInstitutions" .
+?s4 <http://www.openlinksw.com/schemas/xbrl/weight> ?w4.
+?s4 <http://www.openlinksw.com/schemas/xbrl/to> ?t4 .
+?s4 <http://www.openlinksw.com/schemas/xbrl/from> ?f4 .}

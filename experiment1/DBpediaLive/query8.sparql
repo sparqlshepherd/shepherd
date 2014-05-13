@@ -1,0 +1,6 @@
+select * where {
+ ?d2 <http://dbpedia.org/ontology/atcPrefix> ?c2.
+ ?d2 <http://dbpedia.org/ontology/atcSuffix> ?p2.
+ ?d2 <http://dbpedia.org/ontology/casNumber> ?s2.
+ ?d2 <http://dbpedia.org/ontology/drugbank> ?sm2.
+}

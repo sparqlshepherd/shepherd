@@ -1,0 +1,7 @@
+select * where {
+?s1 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/ExplanatoryDisclosures".
+?s1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl1 .
+?s1 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s2 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/Equity".
+?s2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl2 .
+?s2 <http://www.openlinksw.com/schemas/xbrl/order> ?o.}

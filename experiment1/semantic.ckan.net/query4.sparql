@@ -1,0 +1,9 @@
+select * where {
+?s5 <http://www.w3.org/ns/dcat#keyword> "ontology" .
+?s6 <http://www.w3.org/ns/dcat#keyword> "biomedicine" .
+?s5 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s6 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s5 <http://xmlns.com/foaf/0.1/homepage> ?h5.
+?s6 <http://xmlns.com/foaf/0.1/homepage> ?h6.
+?s5 <http://purl.org/dc/terms/relation> ?r5 .
+}

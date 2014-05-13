@@ -1,0 +1,9 @@
+select * where {
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-cath> <http://bio2rdf.org/cath:4.10.140.10>.
+?s4 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb4.
+?s5 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin4.
+}

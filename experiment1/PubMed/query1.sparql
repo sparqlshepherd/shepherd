@@ -1,0 +1,6 @@
+select * where {
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o.
+?o <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o1.
+?o <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1.
+?o <http://bio2rdf.org/pubmed_vocabulary:initials> ?h
+}

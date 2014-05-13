@@ -1,0 +1,6 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://DBpediaLive> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://dbpedia-live.openlinksw.com/sparql".
+<http://HHPID> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://hhpid.bio2rdf.org/sparql".

@@ -1,0 +1,7 @@
+select * where {
+?p <http://dbpedia.org/property/currentMembers> <http://dbpedia.org/resource/Gustavo_Dudamel>.
+?p <http://dbpedia.org/ontology/associatedBand> ?ab1.
+?ab1 <http://xmlns.com/foaf/0.1/homepage> ?hm1.
+?ab1 <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> ?iPt1.
+?ab1 <http://dbpedia.org/property/hasPhotoCollection> ?yA1.
+}

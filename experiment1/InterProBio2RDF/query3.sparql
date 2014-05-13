@@ -1,0 +1,5 @@
+select * where {
+?s1 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:G3V801>.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc1.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc1.
+}

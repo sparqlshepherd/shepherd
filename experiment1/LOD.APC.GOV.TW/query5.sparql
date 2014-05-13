@@ -1,0 +1,5 @@
+select * where {
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/290#this>.
+}

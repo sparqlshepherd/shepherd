@@ -1,0 +1,6 @@
+select * where {
+?s4 <http://prelex.publicdata.eu/ontology/directory_code> "03.60.62.00"@en .
+?s5 <http://prelex.publicdata.eu/ontology/directory_code> "03.70.30.00"@en.
+?s4 <http://prelex.publicdata.eu/ontology/doc_id> ?did4 .
+?s5 <http://prelex.publicdata.eu/ontology/doc_id> ?did5 .
+}

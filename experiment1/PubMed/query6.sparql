@@ -1,0 +1,5 @@
+select * where {
+?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:2578678SUPPL_MESH_HEADING_3>.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o1.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o11.
+}

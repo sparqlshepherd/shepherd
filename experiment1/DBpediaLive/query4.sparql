@@ -1,0 +1,7 @@
+select * where {
+?p <http://dbpedia.org/property/associatedActs> <http://dbpedia.org/resource/Juan_Luis_Guerra>.
+?p <http://dbpedia.org/ontology/associatedMusicalArtist> ?ama1.
+?ama1 <http://dbpedia.org/ontology/activeYearsEndYear> ?aye1.
+?ama1 <http://dbpedia.org/ontology/activeYearsStartYear> ?ays1.
+?ama1 <http://dbpedia.org/ontology/background> ?bg1.
+}

@@ -1,0 +1,7 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://HHPID> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://hhpid.bio2rdf.org/sparql".
+
+<http://IDSGCBMCU> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://id.sgcb.mcu.es/sparql".
