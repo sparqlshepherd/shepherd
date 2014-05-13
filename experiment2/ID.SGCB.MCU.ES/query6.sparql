@@ -1,0 +1,34 @@
+select distinct ?l where {
+{
+?s3 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://id.loc.gov/authorities/sh85087650#concept>.
+?s4 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4136203-2>.
+?s3 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s4 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s3 <http://purl.org/dc/terms/modified> ?m3.
+?s4 <http://purl.org/dc/terms/modified> ?m4.
+}
+UNION
+{
+?s5 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.bnf.fr/ark:/12148/cb123954918>.
+?s6 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://lemac.sgcb.mcu.es/Autoridades/LEMAC201223080/concept>.
+?s7 <http://www.w3.org/2004/02/skos/core#narrower> <http://id.sgcb.mcu.es/Autoridades/LEM201006302/concept>.
+?s5 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s6 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s7 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s5 <http://purl.org/dc/terms/modified> ?m5.
+?s6 <http://purl.org/dc/terms/modified> ?m6.
+?s7 <http://purl.org/dc/terms/modified> ?m7.
+?s5 <http://www.w3.org/2004/02/skos/core#broader> ?cb5.
+?s6 <http://www.w3.org/2004/02/skos/core#broader> ?cb6.
+?s7 <http://www.w3.org/2004/02/skos/core#broader> ?cb7.
+}
+UNION
+{
+?s8 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201006295/concept> .
+?s9 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201001268/concept> .
+?s8 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s9 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s8 <http://purl.org/dc/terms/modified> ?m8 .
+?s9 <http://purl.org/dc/terms/modified> ?m9 .
+}
+}

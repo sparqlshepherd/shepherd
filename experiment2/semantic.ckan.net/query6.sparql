@@ -1,0 +1,37 @@
+select distinct ?ct where {
+{
+?s1 <http://www.w3.org/ns/dcat#keyword> "no-vocab-mappings" .
+?s2 <http://www.w3.org/ns/dcat#keyword> "lod" .
+?s1 <http://www.w3.org/ns/dcat#distribution> ?d1 .
+?s2 <http://www.w3.org/ns/dcat#distribution> ?d2 .
+?s1 <http://purl.org/dc/terms/contributor> ?ct .
+?s2 <http://purl.org/dc/terms/contributor> ?ct .
+}
+UNION
+{
+?s3 <http://www.w3.org/ns/dcat#keyword> "provenance-metadata" .
+?s4 <http://www.w3.org/ns/dcat#keyword> "schemata" .
+?s3 <http://www.w3.org/ns/dcat#distribution> ?d3 .
+?s4 <http://www.w3.org/ns/dcat#distribution> ?d4 .
+?s3 <http://purl.org/dc/terms/contributor> ?ct .
+?s4 <http://purl.org/dc/terms/contributor> ?ct .
+}
+UNION
+{
+?s5 <http://www.w3.org/ns/dcat#keyword> "format-foaf" .
+?s6 <http://www.w3.org/ns/dcat#keyword> "format-sioc" .
+?s5 <http://www.w3.org/ns/dcat#distribution> ?d5 .
+?s6 <http://www.w3.org/ns/dcat#distribution> ?d6 .
+?s5 <http://purl.org/dc/terms/contributor> ?ct .
+?s6 <http://purl.org/dc/terms/contributor> ?ct .
+}
+UNION
+{
+?s7 <http://www.w3.org/ns/dcat#keyword> "format-rdfg" .
+?s7 <http://www.w3.org/ns/dcat#distribution> ?d7 .
+?s8 <http://www.w3.org/ns/dcat#keyword> "socialweb" .
+?s8 <http://www.w3.org/ns/dcat#distribution> ?d8 .
+?s7 <http://purl.org/dc/terms/contributor> ?ct .
+?s8 <http://purl.org/dc/terms/contributor> ?ct .
+}
+}

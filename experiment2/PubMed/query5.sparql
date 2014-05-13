@@ -1,0 +1,25 @@
+select distinct ?pm
+where {
+?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:2578678SUPPL_MESH_HEADING_3>.
+?s2 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:2578678SUPPL_MESH_HEADING_2>.
+?s3 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:2578678SUPPL_MESH_HEADING_1>.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o11.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f11.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:initials> ?h.
+?s1 <http://purl.org/dc/terms/title> ?t1.
+?s2 <http://bio2rdf.org/pubmed_vocabulary:author> ?o2.
+?s2 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm.
+?s2 <http://purl.org/dc/terms/title> ?t2.
+?o2 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o21.
+?o2 <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f2.
+?o2 <http://bio2rdf.org/pubmed_vocabulary:initials> ?h.
+?s3 <http://bio2rdf.org/pubmed_vocabulary:author> ?o2.
+?s3 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm3.
+?o3 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o31.
+?o3 <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f3.
+?o3 <http://bio2rdf.org/pubmed_vocabulary:initials> ?h.
+?s3 <http://purl.org/dc/terms/title> ?t3.
+}
+ORDER BY ?pm

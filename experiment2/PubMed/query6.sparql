@@ -1,0 +1,26 @@
+select distinct ?s1
+where {
+{?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'JournalArticle'.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> 'NLM'.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o1.
+?s1 <http://purl.org/dc/terms/identifier> ?i1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> ?mh1.
+?s1 <http://purl.org/dc/terms/title> ?t1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?ln1.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:initials> ?h1.
+}
+UNION
+{
+?s1  <http://bio2rdf.org/pubmed_vocabulary:publication_type> 'EvaluationStudies'.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> 'NASA'.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o1.
+?s1 <http://purl.org/dc/terms/identifier> ?i1.
+?s1 <http://purl.org/dc/terms/title> ?t1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:last_name> ?ln1.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1.
+?o1 <http://bio2rdf.org/pubmed_vocabulary:initials> ?h1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> ?mh1.
+}}

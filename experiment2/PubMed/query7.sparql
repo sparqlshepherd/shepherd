@@ -1,0 +1,34 @@
+select ?o
+where {{
+?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:3880891SUPPL_MESH_HEADING_1>.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow.
+?s1 <http://purl.org/dc/terms/identifier> ?i.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm.
+?o <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o1.
+?o <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1.
+?o <http://bio2rdf.org/pubmed_vocabulary:initials> ?h
+}
+UNION {
+?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:3880891SUPPL_MESH_HEADING_2>.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow.
+?s1 <http://purl.org/dc/terms/identifier> ?i.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm.
+?o <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o1.
+?o <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1.
+?o <http://bio2rdf.org/pubmed_vocabulary:initials> ?h
+}
+UNION
+{?s1 <http://bio2rdf.org/pubmed_vocabulary:suppl_mesh_heading> <http://bio2rdf.org/pubmed_resource:3880891SUPPL_MESH_HEADING_3>.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:author> ?o1.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:owner> ?ow.
+?s1 <http://purl.org/dc/terms/identifier> ?i.
+?s1 <http://bio2rdf.org/pubmed_vocabulary:publication_model> ?pm.
+?o <http://bio2rdf.org/pubmed_vocabulary:last_name> ?o1.
+?o <http://bio2rdf.org/pubmed_vocabulary:fore_name> ?f1.
+?o <http://bio2rdf.org/pubmed_vocabulary:initials> ?h
+FILTER (?o=?o1)
+}}
+LIMIT 10
+OFFSET 10

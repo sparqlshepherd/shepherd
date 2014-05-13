@@ -1,0 +1,13 @@
+select distinct * where {
+?d1 <http://bio2rdf.org/drugbank_vocabulary:category> 'Antibiotics, Antifungal'. 
+?d2 <http://bio2rdf.org/drugbank_vocabulary:category> 'Antiviral Agents'.
+?d3 <http://bio2rdf.org/drugbank_vocabulary:category> 'Antihypertensive Agents'.
+?d1 <http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in> ?i1.
+?d <http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in> ?i1.
+?d2 <http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in> ?i2.
+?d <http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in> ?i2.
+?d3 <http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in> ?i3.
+?d <http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in> ?i3.
+?d <http://www.w3.org/2002/07/owl#sameAs> ?d5.
+?d <http://bio2rdf.org/drugbank_vocabulary:xref> ?cpd
+}

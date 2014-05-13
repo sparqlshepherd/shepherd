@@ -1,0 +1,33 @@
+select distinct ?d where {
+{
+?s1 <http://www.w3.org/ns/dcat#keyword> "format-rdf" .
+?s2 <http://www.w3.org/ns/dcat#keyword> "lod" .
+?s1 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s2 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s1 <http://purl.org/dc/terms/relation> ?r1 .
+?s2 <http://purl.org/dc/terms/relation> ?r2 .
+}
+UNION
+{
+?s3 <http://www.w3.org/ns/dcat#keyword> "format-obo" .
+?s4 <http://www.w3.org/ns/dcat#keyword> "format-owl" .
+?s3 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s3 <http://purl.org/dc/terms/relation> ?r3 .
+?s4 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s4 <http://purl.org/dc/terms/relation> ?r4 .
+}
+UNION
+{
+?s5 <http://www.w3.org/ns/dcat#keyword> "linguistics" .
+?s6 <http://www.w3.org/ns/dcat#keyword> "crossdomain" .
+?s5 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s5 <http://purl.org/dc/terms/relation> ?r5 .
+?s6 <http://purl.org/dc/terms/relation> ?r6 .
+}
+UNION 
+{
+?s7 <http://www.w3.org/ns/dcat#keyword> "test" .
+?s7 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s7 <http://purl.org/dc/terms/relation> ?r7 .
+}
+}

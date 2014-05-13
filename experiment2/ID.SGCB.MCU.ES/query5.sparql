@@ -1,0 +1,29 @@
+select distinct ?l where {
+{
+?s3 <http://www.w3.org/2004/02/skos/core#narrower> <http://id.sgcb.mcu.es/Autoridades/LEM201007297/concept>.
+?s4 <http://www.w3.org/2004/02/skos/core#narrower> <http://id.sgcb.mcu.es/Autoridades/LEM201007315/concept>.
+?s3 <http://www.w3.org/2004/02/skos/core#prefLabel> ?l.
+?s4 <http://www.w3.org/2004/02/skos/core#prefLabel> ?l.
+}
+UNION
+{
+?s5 <http://www.w3.org/2004/02/skos/core#narrower> <http://id.sgcb.mcu.es/Autoridades/LEM201007310/concept>.
+?s6 <http://www.w3.org/2004/02/skos/core#narrower> <http://id.sgcb.mcu.es/Autoridades/LEM201007316/concept>.
+?s5 <http://www.w3.org/2004/02/skos/core#prefLabel> ?l.
+?s6 <http://www.w3.org/2004/02/skos/core#prefLabel> ?l.
+}
+UNION
+{
+?s8 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://id.loc.gov/authorities/sh99001678#concept> .
+?s9 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://lemac.sgcb.mcu.es/Autoridades/LEMAC201227075/concept> .
+?s8 <http://www.w3.org/2004/02/skos/core#prefLabel> ?l.
+?s9 <http://www.w3.org/2004/02/skos/core#prefLabel> ?l.
+}
+UNION
+{
+?s10 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201007318/concept> .
+?s11 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201001221/concept> .
+?s10 <http://www.w3.org/2004/02/skos/core#prefLabel> ?l.
+?s11 <http://www.w3.org/2004/02/skos/core#prefLabel> ?l.
+}
+}

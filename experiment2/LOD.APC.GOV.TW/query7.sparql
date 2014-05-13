@@ -1,0 +1,18 @@
+select distinct ?o1 ?o2 where {
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '33' .
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '1' .
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '4' .
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/id>  '3'.
+?s5 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '6' .
+?s5 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o2.
+?s6 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '12' .
+?s6 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o2.
+?s7 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '466' .
+?s7 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o2.
+?s8 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '7' .
+?s8 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o2.
+}

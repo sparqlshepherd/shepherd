@@ -1,0 +1,30 @@
+select ?p where {
+{?s1 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> <http://bio2rdf.org/uniprot:001R_FRG3G> .
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> <http://bio2rdf.org/uniprot:007R_FRG3G> .
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g1.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g2.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-gi> ?xg1 .
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-gi> ?xg2 .
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn1.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn2.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p .
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p .
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr1.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr2
+}
+UNION
+{?s3 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:81941549> .
+ ?s4 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:49237298> .
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g3.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g4.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu3 .
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu4 .
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn1.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn2.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr3.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr4
+}
+}
+ORDER BY ?p

@@ -1,0 +1,35 @@
+select distinct ?o
+where {
+{
+?s1 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/ExplanatoryDisclosures".
+?s2 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/Equity".
+?s1 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s2 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s1 <http://www.openlinksw.com/schemas/xbrl/weight> ?w1.
+?s2 <http://www.openlinksw.com/schemas/xbrl/weight> ?w2.
+?s1 <http://www.openlinksw.com/schemas/xbrl/to> ?t1 .
+?s2 <http://www.openlinksw.com/schemas/xbrl/to> ?t2 .
+?s1 <http://www.openlinksw.com/schemas/xbrl/from> ?f1 .
+?s2 <http://www.openlinksw.com/schemas/xbrl/from> ?f2 .
+?s1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl1 .
+?s2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl2 .
+}
+UNION
+{
+?s3 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CashFlowDirectFinancialInstitutions".
+?s3 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s3 <http://www.openlinksw.com/schemas/xbrl/weight> ?w3.
+?s3 <http://www.openlinksw.com/schemas/xbrl/to> ?t3 .
+?s3 <http://www.openlinksw.com/schemas/xbrl/from> ?f3 .
+?s3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl3 .
+}
+UNION
+{
+?s4 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CashFlowIndirectFinancialInstitutions" .
+?s4 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s4 <http://www.openlinksw.com/schemas/xbrl/weight> ?w4.
+?s4 <http://www.openlinksw.com/schemas/xbrl/to> ?t4 .
+?s4 <http://www.openlinksw.com/schemas/xbrl/from> ?f4 .
+?s4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl4 .
+}
+}

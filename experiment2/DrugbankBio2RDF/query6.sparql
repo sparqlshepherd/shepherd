@@ -1,0 +1,20 @@
+select ?d where { 
+{?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Antineoplastic Agents'.
+OPTIONAL 
+ {?d <http://bio2rdf.org/drugbank_vocabulary:indication> ?i.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:biotransformation> ?b.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:toxity> ?t.
+   }
+}
+UNION 
+{
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Small molecule'.
+OPTIONAL
+ {?d <http://bio2rdf.org/drugbank_vocabulary:indication> ?i.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:biotransformation> ?b.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:toxity> ?t.
+   }
+}
+}

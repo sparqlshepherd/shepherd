@@ -1,0 +1,16 @@
+select distinct * 
+where {
+ ?d1 <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Aminoglycoside_antibiotics>.
+ ?d1 <http://dbpedia.org/property/routesOfAdministration> ?o.
+ ?d1 <http://dbpedia.org/ontology/chEBI> ?c1.
+ ?d1 <http://dbpedia.org/property/proteinBound> ?p1.
+ ?d1 <http://dbpedia.org/property/unii> ?u1.
+ ?d1 <http://dbpedia.org/property/stdinchikey> ?s1.
+ ?d1 <http://dbpedia.org/property/smiles> ?sm1.
+ ?d1 <http://dbpedia.org/property/pubchem> ?pu1.
+ ?d1 <http://dbpedia.org/property/molecularWeight> ?m1.
+ ?d1 <http://dbpedia.org/property/kegg> ?k1.
+ ?d1 <http://dbpedia.org/property/excretion> ?e1.
+ ?d1 <http://dbpedia.org/property/drugbank> ?dg1.
+}
+                

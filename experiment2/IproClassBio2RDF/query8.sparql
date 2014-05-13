@@ -1,0 +1,33 @@
+select distinct ?p where {
+{
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-taxon> <http://bio2rdf.org/taxon:63632>.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-taxon> <http://bio2rdf.org/taxon:4513>.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g1.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g2.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn1.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn2.
+}
+UNION
+{
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-taxon> <http://bio2rdf.org/taxon:63632>.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g1.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn1.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-taxon> <http://bio2rdf.org/taxon:4558>.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g3.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn1.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn3.
+}
+UNION
+{?s1 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-pubmed> ?p.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g1.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g4.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-taxon> <http://bio2rdf.org/taxon:63632>.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn1.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn4.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-taxon> <http://bio2rdf.org/taxon:345913>.
+}}

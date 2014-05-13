@@ -1,0 +1,32 @@
+select ?e where {
+{?s1 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> ?e.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> ?e.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'downregulates' .
+?s2 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'inhibits' .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp1.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp2.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p1.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p2.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id1 .
+?s2 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id2 .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?eg1.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?eg2.
+}
+UNION
+{
+?s3 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> ?e.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> ?e.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'recruits' .
+?s4 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'upregulates' .
+?s3 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp3.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp4.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p3.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p4.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id3 .
+?s4 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id4 .
+?s3 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?eg3 .
+?s4 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?eg4 .
+}
+FILTER (?s1!=?s2)
+FILTER (?s3!=?s4)
+}

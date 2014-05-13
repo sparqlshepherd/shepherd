@@ -1,0 +1,18 @@
+select distinct ?ct where {
+?s1 <http://www.w3.org/ns/dcat#keyword> "no-vocab-mappings" .
+?s1 <http://xmlns.com/foaf/0.1/homepage> ?h1.
+?s1 <http://purl.org/dc/terms/relation> ?r1 .
+?s2 <http://www.w3.org/ns/dcat#keyword> "lod" .
+?s2 <http://xmlns.com/foaf/0.1/homepage> ?h2.
+?s2 <http://purl.org/dc/terms/relation> ?r2 .
+?s3 <http://www.w3.org/ns/dcat#keyword> "provenance-metadata" .
+?s4 <http://www.w3.org/ns/dcat#keyword> "schemata" .
+?s3 <http://xmlns.com/foaf/0.1/homepage> ?h3.
+?s3 <http://purl.org/dc/terms/relation> ?r3 .
+?s4 <http://xmlns.com/foaf/0.1/homepage> ?h4.
+?s4 <http://purl.org/dc/terms/relation> ?r4 .
+?s1 <http://purl.org/dc/terms/contributor> ?ct .
+?s2 <http://purl.org/dc/terms/contributor> ?ct .
+?s3 <http://purl.org/dc/terms/contributor> ?ct .
+?s4 <http://purl.org/dc/terms/contributor> ?ct .
+}

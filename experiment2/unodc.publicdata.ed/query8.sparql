@@ -1,0 +1,83 @@
+select ?cn where {
+{
+?s1 <http://prelex.publicdata.eu/ontology/directory_code> "03.20.40.10"@en .
+?s1 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s1 <http://prelex.publicdata.eu/ontology/doc_id> ?did1 .
+?s1 <http://prelex.publicdata.eu/ontology/event> ?e1 .
+?s1 <http://prelex.publicdata.eu/ontology/perma_url> ?pu1 .
+?s1 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad1 .
+?s1 <http://purl.org/dc/terms/title> ?t1.
+OPTIONAL
+{
+?s2 <http://prelex.publicdata.eu/ontology/directory_code> "03.60.51.00"@en .
+?s2 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s2 <http://prelex.publicdata.eu/ontology/doc_id> ?did2 .
+?s2 <http://prelex.publicdata.eu/ontology/event> ?e2 .
+?s2 <http://prelex.publicdata.eu/ontology/perma_url> ?pu2 .
+?s2 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad2 .
+?s2 <http://purl.org/dc/terms/title> ?t2.
+}
+}
+UNION
+{
+?s3 <http://prelex.publicdata.eu/ontology/directory_code> "11.70.20.20"@en .
+?s3 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s3 <http://prelex.publicdata.eu/ontology/doc_id> ?did3 .
+?s3 <http://prelex.publicdata.eu/ontology/event> ?e3 .
+?s3 <http://prelex.publicdata.eu/ontology/perma_url> ?pu3 .
+?s3 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad3 .
+?s3 <http://purl.org/dc/terms/title> ?t3.
+OPTIONAL
+{
+?s4 <http://prelex.publicdata.eu/ontology/directory_code> "11.70.40.20"@en .
+?s4 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s4 <http://prelex.publicdata.eu/ontology/doc_id> ?did4 .
+?s4 <http://prelex.publicdata.eu/ontology/event> ?e4 .
+?s4 <http://prelex.publicdata.eu/ontology/perma_url> ?pu4 .
+?s4 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad4 .
+?s4 <http://purl.org/dc/terms/title> ?t4.
+}
+}
+UNION
+{
+?s5 <http://prelex.publicdata.eu/ontology/directory_code> "11.40.10.30"@en .
+?s5 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s5 <http://prelex.publicdata.eu/ontology/doc_id> ?did5 .
+?s5 <http://prelex.publicdata.eu/ontology/event> ?e5 .
+?s5 <http://prelex.publicdata.eu/ontology/perma_url> ?pu5 .
+?s5 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad5 .
+?s5 <http://purl.org/dc/terms/title> ?t5.
+OPTIONAL
+{
+?s6 <http://prelex.publicdata.eu/ontology/directory_code> "11.40.10.20"@en .
+?s6 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s6 <http://prelex.publicdata.eu/ontology/doc_id> ?did6 .
+?s6 <http://prelex.publicdata.eu/ontology/event> ?e6 .
+?s6 <http://prelex.publicdata.eu/ontology/perma_url> ?pu6 .
+?s6 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad6 .
+?s6 <http://purl.org/dc/terms/title> ?t6.
+}
+}
+UNION
+{
+?s7 <http://prelex.publicdata.eu/ontology/directory_code> "11.50.20.00"@en .
+?s8 <http://prelex.publicdata.eu/ontology/directory_code> "01.40.80.00"@en .
+?s7 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s7 <http://prelex.publicdata.eu/ontology/doc_id> ?did7 .
+?s7 <http://prelex.publicdata.eu/ontology/event> ?e7 .
+?s7 <http://prelex.publicdata.eu/ontology/perma_url> ?pu7 .
+?s7 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad7 .
+?s7 <http://purl.org/dc/terms/title> ?t7.
+?s8 <http://prelex.publicdata.eu/ontology/com_number> ?cn .
+?s8 <http://prelex.publicdata.eu/ontology/doc_id> ?did8 .
+?s8 <http://prelex.publicdata.eu/ontology/event> ?e8 .
+?s8 <http://prelex.publicdata.eu/ontology/perma_url> ?pu8 .
+?s8 <http://prelex.publicdata.eu/ontology/adoption_commission> ?ad8 .
+?s8 <http://purl.org/dc/terms/title> ?t8.
+FILTER (?s7!=?s8)
+}
+FILTER (?s1!=?s2)
+FILTER (?s3!=?s4)
+FILTER (?s5!=?s6)
+}
+ORDER BY ?cn

@@ -1,0 +1,57 @@
+select ?o
+where {
+{
+?s1 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CashFlowIndirect".
+?s1 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s1 <http://www.openlinksw.com/schemas/xbrl/weight> ?w1.
+?s1 <http://www.openlinksw.com/schemas/xbrl/to> ?t1 .
+?s1 <http://www.openlinksw.com/schemas/xbrl/from> ?f1 .
+?s1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl1 .
+}
+UNION
+{
+?s2 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/ExplanatoryDisclosures".
+?s2 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s2 <http://www.openlinksw.com/schemas/xbrl/weight> ?w2.
+?s2 <http://www.openlinksw.com/schemas/xbrl/to> ?t2 .
+?s2 <http://www.openlinksw.com/schemas/xbrl/from> ?f2 .
+?s2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl2 .
+}
+UNION
+{
+?s3 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/BalanceSheetClassified".
+?s3 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s3 <http://www.openlinksw.com/schemas/xbrl/weight> ?w3.
+?s3 <http://www.openlinksw.com/schemas/xbrl/to> ?t3 .
+?s3 <http://www.openlinksw.com/schemas/xbrl/from> ?f3 .
+?s3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl3 .
+}
+UNION
+{
+?s4 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CurrentNonCurrent" .
+?s4 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s4 <http://www.openlinksw.com/schemas/xbrl/weight> ?w4.
+?s4 <http://www.openlinksw.com/schemas/xbrl/to> ?t4 .
+?s4 <http://www.openlinksw.com/schemas/xbrl/from> ?f4 .
+?s4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl4 .
+}
+UNION
+{
+?s5 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/AccountingPolicies" .
+?s5 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s5 <http://www.openlinksw.com/schemas/xbrl/weight> ?w5.
+?s5 <http://www.openlinksw.com/schemas/xbrl/to> ?t5 .
+?s5 <http://www.openlinksw.com/schemas/xbrl/from> ?f5 .
+?s5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl5 
+}
+UNION
+{
+?s6 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/TuplesAmountToAggregate" .
+?s6 <http://www.openlinksw.com/schemas/xbrl/order> ?o.
+?s6 <http://www.openlinksw.com/schemas/xbrl/weight> ?w6.
+?s6 <http://www.openlinksw.com/schemas/xbrl/to> ?t6 .
+?s6 <http://www.openlinksw.com/schemas/xbrl/from> ?f6 .
+?s6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl6
+}
+}
+ORDER BY ?o

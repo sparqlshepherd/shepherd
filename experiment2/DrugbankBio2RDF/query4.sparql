@@ -1,0 +1,7 @@
+select distinct ?d where {
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Dietary supplement'. 
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Nutraceutical'.
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Small molecule'.
+OPTIONAL
+  {?d <http://bio2rdf.org/drugbank_vocabulary:xref> ?k.} 
+}

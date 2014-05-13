@@ -1,0 +1,28 @@
+select distinct ?e where {
+?s1 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?e.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?e.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?e.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?e.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'binds' .
+?s2 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'inhibits' .
+?s3 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'recruits' .
+?s4 <http://bio2rdf.org/hhpid_vocabulary:keyword> 'upregulates' .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp1.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp2.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp3.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp4.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p1.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p2.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p3.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p4.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id1 .
+?s2 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id2 .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id3 .
+?s2 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id4.
+OPTIONAL
+{?s1 <http://bio2rdf.org/hhpid_vocabulary:elementGene1> ?eg.
+ ?s2 <http://bio2rdf.org/hhpid_vocabulary:elementGene1> ?eg.
+ ?s3 <http://bio2rdf.org/hhpid_vocabulary:elementGene1> ?eg.
+ ?s4 <http://bio2rdf.org/hhpid_vocabulary:elementGene1> ?eg.
+}
+}

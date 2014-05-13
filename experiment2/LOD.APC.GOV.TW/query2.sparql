@@ -1,0 +1,19 @@
+select distinct ?t where {
+{
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/marriagecustoms> ?m1 .
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/marriagecustoms> ?m2.
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/404#this>.
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/504#this>.
+}
+UNION
+{
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/religion> ?t.
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/marriagecustoms> ?m3 .
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/marriagecustoms> ?m4.
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/486#this>.
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/ethnic_of> <http://lod.apc.gov.tw:8890/Contest/tribeapproved/ID/76#this>.
+}
+}

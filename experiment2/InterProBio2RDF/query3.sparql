@@ -1,0 +1,42 @@
+select distinct ?pid where {
+?s1 <http://bio2rdf.org/interpro_vocabulary:found-in> <http://bio2rdf.org/interpro:IPR014394> .
+?s2 <http://bio2rdf.org/interpro_vocabulary:found-in> <http://bio2rdf.org/interpro:IPR000001> .
+?s3 <http://bio2rdf.org/interpro_vocabulary:found-in> <http://bio2rdf.org/interpro:IPR001314> .
+?s4 <http://bio2rdf.org/interpro_vocabulary:found-in> <http://bio2rdf.org/interpro:IPR016247>.
+?s1 <http://bio2rdf.org/interpro_vocabulary:example-entry> ?pid.
+?s2 <http://bio2rdf.org/interpro_vocabulary:example-entry> ?pid.
+?s3 <http://bio2rdf.org/interpro_vocabulary:example-entry> ?pid.
+?s4 <http://bio2rdf.org/interpro_vocabulary:example-entry> ?pid.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d1.
+?s2 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d2.
+?s3 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d4.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp2.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp4.
+OPTIONAL
+ {?s1 <http://bio2rdf.org/interpro_vocabulary:x-msdsite> ?md1.
+  ?s1 <http://bio2rdf.org/interpro_vocabulary:found-in> <http://bio2rdf.org/interpro:IPR014394> .
+  ?s1 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs1.
+}.
+OPTIONAL
+{  ?s2 <http://bio2rdf.org/interpro_vocabulary:x-msdsite> ?md2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:found-in> <http://bio2rdf.org/interpro:IPR000001> .
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs2.
+}.
+OPTIONAL
+{  ?s3 <http://bio2rdf.org/interpro_vocabulary:x-msdsite> ?md3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:found-in> <http://bio2rdf.org/interpro:IPR001314> .
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs3.
+}.
+OPTIONAL
+{  ?s4 <http://bio2rdf.org/interpro_vocabulary:x-msdsite> ?md4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:found-in> <http://bio2rdf.org/interpro:IPR016247>.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs4.
+}
+}

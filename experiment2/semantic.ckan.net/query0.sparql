@@ -1,0 +1,14 @@
+select distinct ?d where {
+?s1 <http://www.w3.org/ns/dcat#keyword> "format-rdf" .
+?s2 <http://www.w3.org/ns/dcat#keyword> "lod" .
+?s3 <http://www.w3.org/ns/dcat#keyword> "published-by-third-party" .
+?s4 <http://www.w3.org/ns/dcat#keyword> "format-owl" .
+?s1 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s2 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s3 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s4 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s1 <http://purl.org/dc/terms/contributor> ?ct1 .
+?s2 <http://purl.org/dc/terms/contributor> ?ct2 .
+?s3 <http://purl.org/dc/terms/contributor> ?ct3 .
+?s4 <http://purl.org/dc/terms/contributor> ?ct4 .
+}

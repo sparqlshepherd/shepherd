@@ -1,0 +1,17 @@
+select distinct *
+where {
+?p <http://dbpedia.org/property/currentMembers> <http://dbpedia.org/resource/Gustavo_Dudamel>.
+?p <http://dbpedia.org/ontology/associatedBand> ?ab1.
+?p <http://dbpedia.org/ontology/instrument> ?ins1.
+?p <http://dbpedia.org/ontology/activeYearsStartYear> ?ac1.
+?p <http://dbpedia.org/ontology/associatedMusicalArtist> ?ama1.
+?ins1 <http://dbpedia.org/property/birthDate> ?bd1.
+?ins1 <http://dbpedia.org/property/birthPlace> ?hs1.
+?ins1 <http://dbpedia.org/property/placeOfBirth> ?poB1.
+?ins1 <http://dbpedia.org/property/education> ?ed1.
+?ins1 <http://dbpedia.org/property/spouse> ?sp1.
+?ab1 <http://xmlns.com/foaf/0.1/homepage> ?hm1.
+?ab1 <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> ?iPt1.
+?ab1 <http://www.w3.org/ns/prov#wasDerivedFrom> ?wd1.
+?ab1 <http://dbpedia.org/property/hasPhotoCollection> ?yA1.
+}

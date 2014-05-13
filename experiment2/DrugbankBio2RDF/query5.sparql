@@ -1,0 +1,13 @@
+select distinct ?d where {
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Dietary supplement'. 
+?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Nutraceutical'.
+?d <http://bio2rdf.org/drugbank_vocabulary:indication> ?i.
+
+OPTIONAL 
+ {
+  ?d <http://bio2rdf.org/drugbank_vocabulary:category> 'Small molecule'.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:biotransformation> ?b.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s.
+  ?d <http://bio2rdf.org/drugbank_vocabulary:toxity> ?t.
+   }
+}

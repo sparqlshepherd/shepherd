@@ -1,0 +1,53 @@
+select ?d where {
+{
+?s1 <http://www.w3.org/ns/dcat#keyword> "no-vocab-mappings" .
+?s1 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s1 <http://purl.org/dc/terms/relation> ?r1 .
+}
+UNION
+{
+?s2 <http://www.w3.org/ns/dcat#keyword> "lod" .
+?s2 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s2 <http://purl.org/dc/terms/relation> ?r2 .
+}
+UNION
+{
+?s3 <http://www.w3.org/ns/dcat#keyword> "provenance-metadata" .
+?s4 <http://www.w3.org/ns/dcat#keyword> "schemata" .
+?s3 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s3 <http://purl.org/dc/terms/relation> ?r3 .
+}
+UNION
+{
+?s4 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s4 <http://xmlns.com/foaf/0.1/homepage> ?h4.
+?s4 <http://purl.org/dc/terms/relation> ?r4 .
+}
+UNION
+{
+?s5 <http://www.w3.org/ns/dcat#keyword> "format-foaf" .
+?s5 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s5 <http://xmlns.com/foaf/0.1/homepage> ?h5.
+?s5 <http://purl.org/dc/terms/relation> ?r5 .
+}
+UNION
+{
+?s6 <http://www.w3.org/ns/dcat#keyword> "format-sioc" .
+?s6 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s6 <http://xmlns.com/foaf/0.1/homepage> ?h6.
+?s6 <http://purl.org/dc/terms/relation> ?r6 .
+}
+UNION
+{
+?s7 <http://www.w3.org/ns/dcat#keyword> "format-rdfg" .
+?s7 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s7 <http://purl.org/dc/terms/relation> ?r7 .
+}
+UNION
+{
+?s8 <http://www.w3.org/ns/dcat#keyword> "socialweb" .
+?s8 <http://www.w3.org/ns/dcat#distribution> ?d .
+?s8 <http://purl.org/dc/terms/relation> ?r8 .
+}
+}
+ORDER BY ?d

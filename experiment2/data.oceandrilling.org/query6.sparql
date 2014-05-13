@@ -1,0 +1,35 @@
+select ?w
+where {
+?s1 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CashFlowIndirect".
+?s1 <http://www.openlinksw.com/schemas/xbrl/order> ?o1.
+?s1 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
+?s1 <http://www.openlinksw.com/schemas/xbrl/to> ?t1 .
+?s1 <http://www.openlinksw.com/schemas/xbrl/from> ?f1 .
+?s1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl1 .
+{
+?s2 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/ExplanatoryDisclosures".
+?s2 <http://www.openlinksw.com/schemas/xbrl/order> ?o2.
+?s2 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
+?s2 <http://www.openlinksw.com/schemas/xbrl/to> ?t2 .
+?s2 <http://www.openlinksw.com/schemas/xbrl/from> ?f2 .
+?s2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl2 .
+}
+UNION
+{
+?s3 <http://www.openlinksw.com/schemas/xbrl/role> "http://xbrl.iasb.org/int/fr/ifrs/gp/role/BalanceSheetClassified".
+?s3 <http://www.openlinksw.com/schemas/xbrl/order> ?o3.
+?s3 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
+?s3 <http://www.openlinksw.com/schemas/xbrl/to> ?t3 .
+?s3 <http://www.openlinksw.com/schemas/xbrl/from> ?f3 .
+?s3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl3 .
+?s4 <http://www.openlinksw.com/schemas/xbrl/role>  "http://xbrl.iasb.org/int/fr/ifrs/gp/role/CurrentNonCurrent" .
+?s4 <http://www.openlinksw.com/schemas/xbrl/order> ?o4.
+?s4 <http://www.openlinksw.com/schemas/xbrl/weight> ?w.
+?s4 <http://www.openlinksw.com/schemas/xbrl/to> ?t4 .
+?s4 <http://www.openlinksw.com/schemas/xbrl/from> ?f4 .
+?s4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?pl4 .
+}
+}
+ORDER BY ?w
+LIMIT 100
+OFFSET 100

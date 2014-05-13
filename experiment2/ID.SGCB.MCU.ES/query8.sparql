@@ -1,0 +1,12 @@
+select distinct ?l where {
+?s1 <http://www.w3.org/2004/02/skos/core#narrower> <http://id.sgcb.mcu.es/Autoridades/LEM201000868/concept> .
+?s2 <http://www.w3.org/2004/02/skos/core#narrower> <http://id.sgcb.mcu.es/Autoridades/LEM201000869/concept> .
+?s3 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.bnf.fr/ark:/12148/cb11967821z>.
+?s4 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4044278-0>.
+?s3 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s4 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s5 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201003304/concept>.
+?s6 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201002309/concept>.
+?s5 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s6 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+}

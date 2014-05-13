@@ -1,0 +1,60 @@
+select distinct ?k where {
+{?s1 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> <http://bio2rdf.org/refseq:NP_0006071> .
+?s2 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> <http://bio2rdf.org/refseq:NP_001311> .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:keyword> ?k .
+?s2 <http://bio2rdf.org/hhpid_vocabulary:keyword> ?k .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp1.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp2.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p1.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p2.
+?s1 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id1 .
+?s2 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id2 .
+?s1 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?eg1.
+?s2 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?eg2.
+}
+UNION
+{
+?s3 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> ?e3.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> ?e4.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:keyword> ?k .
+?s4 <http://bio2rdf.org/hhpid_vocabulary:keyword> ?k .
+?s3 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp3.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp4.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p3.
+?s4 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p4.
+?s3 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id3 .
+?s4 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id4 .
+?s3 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> <http://bio2rdf.org/geneid:5700> .
+?s4 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> <http://bio2rdf.org/geneid:5720> .
+}
+UNION 
+{
+?s5 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> <http://bio2rdf.org/refseq:NP_002793>.
+?s6 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> <http://bio2rdf.org/refseq:NP_002799>.
+?s5 <http://bio2rdf.org/hhpid_vocabulary:keyword> ?k .
+?s6 <http://bio2rdf.org/hhpid_vocabulary:keyword> ?k .
+?s5 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp5.
+?s6 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp6.
+?s5 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p5.
+?s6 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p6.
+?s5 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id5 .
+?s6 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id6 .
+?s5 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?eg5.
+ ?s6 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> ?eg6.
+}
+UNION
+{
+?s7 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> ?p7.
+?s8 <http://bio2rdf.org/hhpid_vocabulary:elementProtein2> ?p8.
+?s7 <http://bio2rdf.org/hhpid_vocabulary:keyword> ?k .
+?s8 <http://bio2rdf.org/hhpid_vocabulary:keyword> ?k .
+?s7 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp7.
+?s8 <http://bio2rdf.org/hhpid_vocabulary:relatedPublication> ?rp8.
+?s7 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p7.
+?s8 <http://bio2rdf.org/hhpid_vocabulary:elementProteinVersion1> ?p8.
+?s7 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id7 .
+?s8 <http://bio2rdf.org/hhpid_vocabulary:interactionDesc> ?id8 .
+?s7 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> <http://bio2rdf.org/geneid:3313>.
+ ?s8 <http://bio2rdf.org/hhpid_vocabulary:elementGene2> <http://bio2rdf.org/geneid:3329>.
+}
+}

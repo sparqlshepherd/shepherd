@@ -1,0 +1,44 @@
+select distinct ?b where {
+{?d1 <http://bio2rdf.org/drugbank_vocabulary:category> 'Dietary supplement'. 
+?d1 <http://bio2rdf.org/drugbank_vocabulary:target> ?b.
+OPTIONAL
+{
+  ?d1 <http://bio2rdf.org/drugbank_vocabulary:indication> ?i1.
+  ?d1 <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s1. 
+}
+}
+UNION
+{
+?d2 <http://bio2rdf.org/drugbank_vocabulary:category> 'Nutraceutical'.
+?d2 <http://bio2rdf.org/drugbank_vocabulary:target> ?b.
+OPTIONAL
+{
+?d2 <http://bio2rdf.org/drugbank_vocabulary:indication> ?i2.
+  ?d2 <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s2.
+}
+}
+UNION
+{
+?d3 <http://bio2rdf.org/drugbank_vocabulary:category> 'Small molecule'.
+  ?d3 <http://bio2rdf.org/drugbank_vocabulary:target> ?b.
+OPTIONAL
+{
+ ?d3 <http://bio2rdf.org/drugbank_vocabulary:indication> ?i3.
+  ?d3 <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s3.
+}
+}
+UNION
+{?d4 <http://bio2rdf.org/drugbank_vocabulary:category> 'Approved'.
+?d4 <http://bio2rdf.org/drugbank_vocabulary:target> ?b.
+OPTIONAL
+ {
+  ?d4 <http://bio2rdf.org/drugbank_vocabulary:indication> ?i4.
+  ?d4 <http://bio2rdf.org/drugbank_vocabulary:synonym> ?s4.
+}
+}
+FILTER (?d1!=?d2)
+}
+ORDER BY ?b
+LIMIT 10
+OFFSET 10
+

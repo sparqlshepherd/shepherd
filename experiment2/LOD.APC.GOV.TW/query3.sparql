@@ -1,0 +1,10 @@
+select distinct ?o1 ?o2 where {
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '33' .
+?s1 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o1.
+?s2 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '1' .
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/id> '309' .
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o2.
+?s3 <http://lod.apc.gov.tw:8890/schemas/Contest/neighborhood> ?o2.
+?s4 <http://lod.apc.gov.tw:8890/schemas/Contest/id>  '5'.
+}

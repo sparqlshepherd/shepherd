@@ -1,0 +1,31 @@
+select ?l where {
+{
+?s1 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://id.loc.gov/authorities/sh85142341#concept>.
+?s2 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4255907-8>.
+?s1 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s2 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+}
+OPTIONAL
+{
+?s3 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4227473-4>.
+?s4 <http://www.w3.org/2004/02/skos/core#closeMatch> <http://d-nb.info/gnd/4311467-2>.
+?s3 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s4 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+FILTER (?s3!=?s4)
+}
+.
+{
+?s8 <http://www.w3.org/2004/02/skos/core#broader> <http://id.sgcb.mcu.es/Autoridades/LEM201008064/concept> .
+?s9 <http://www.w3.org/2004/02/skos/core#broader> <http://id.sgcb.mcu.es/Autoridades/LEM201007130/concept> .
+?s8 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s9 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+}
+OPTIONAL
+{
+?s10 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201005760/concept> .
+?s11 <http://www.w3.org/2004/02/skos/core#related> <http://id.sgcb.mcu.es/Autoridades/LEM201007138/concept> .
+?s11 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+?s12 <http://www.w3.org/2004/02/skos/core#altLabel> ?l.
+FILTER (?s10!=?s11)
+}
+}

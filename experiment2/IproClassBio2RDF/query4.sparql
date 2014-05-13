@@ -1,0 +1,51 @@
+select distinct ?g where {
+{?s1 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> <http://bio2rdf.org/uniprot:001R_FRG3G> .
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> <http://bio2rdf.org/uniprot:007R_FRG3G> .
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-gi> ?xg1 .
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-gi> ?xg2 .
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn1.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn2.
+?s1 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr1.
+?s2 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr2
+}
+UNION
+{?s3 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:81941549> .
+ ?s4 <http://bio2rdf.org/iproclass_vocabulary:x-gi> <http://bio2rdf.org/gi:49237304> .
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu3 .
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu4 .
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn3.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn4.
+?s3 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr3.
+?s4 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr4
+}
+UNION
+{
+?s5 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> <http://bio2rdf.org/geneid:2947782> .
+ ?s6 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> <http://bio2rdf.org/geneid:2947779> .
+?s5 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g.
+?s6 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g.
+?s5 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu5 .
+?s6 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu6 .
+?s5 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn5.
+?s6 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn6.
+?s5 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr5.
+?s6 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr6 
+}
+UNION
+{
+ ?s7 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> <http://bio2rdf.org/refseq:YP_031579.1> .
+ ?s8 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> <http://bio2rdf.org/refseq:YP_031585.1> .
+?s7 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g.
+?s8 <http://bio2rdf.org/iproclass_vocabulary:x-genbank> ?g.
+?s7 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu7 .
+?s8 <http://bio2rdf.org/iproclass_vocabulary:x-uniprot> ?xu8 .
+?s7 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn7.
+?s8 <http://bio2rdf.org/iproclass_vocabulary:x-geneid> ?gn8.
+?s7 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr7.
+?s8 <http://bio2rdf.org/iproclass_vocabulary:x-refseq> ?xr8
+}
+}

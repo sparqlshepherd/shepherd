@@ -1,0 +1,35 @@
+select ?d where {
+{?s1 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> <http://bio2rdf.org/pubmed:3780752> .
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> <http://bio2rdf.org/pubmed:16019990> .
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb2.
+}
+UNION
+{
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pdb> <http://bio2rdf.org/pdb:1e8b> .
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pdbp> <http://bio2rdf.org/pdb:1o9a> .
+?s3 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s4 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb4.
+FILTER (?s3!=?s4)
+}
+}

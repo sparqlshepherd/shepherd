@@ -1,0 +1,23 @@
+select ?d where {
+?s1 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:G3V801>.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb1.
+?s2 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:P06869>.
+?s1 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:found-in> ?fin2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pdb> ?xpdb2.
+OPTIONAL
+{?s1 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.
+ ?s2 <http://www.w3.org/ns/prov#wasDerivedFrom> ?df.
+}
+}
+ORDER BY ?d
+LIMIT 10
+OFFSET 10

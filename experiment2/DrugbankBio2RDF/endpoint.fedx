@@ -1,0 +1,7 @@
+@prefix fluid: <http://fluidops.org/config#>.
+
+<http://OceanDrilling> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://data.oceandrilling.org/sparql".
+
+<http://Drugbank> fluid:store "SPARQLEndpoint";
+fluid:SPARQLEndpoint "http://drugbank.bio2rdf.org/sparql".

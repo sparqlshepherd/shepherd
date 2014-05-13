@@ -1,0 +1,27 @@
+select distinct ?d where {
+?s1 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:A2T929> .
+?s2 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:P19793> .
+?s3 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:P28700> .
+?s4 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:O44960> .
+?s5 <http://bio2rdf.org/interpro_vocabulary:example-entry> <http://bio2rdf.org/uniprot:P20153> .
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp1.
+?s1 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s3 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s4 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s5 <http://bio2rdf.org/interpro_vocabulary:taxon-distribution> ?d.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs2.
+?s2 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp2.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs3.
+?s3 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp3.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs4.
+?s4 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp4.
+?s5 <http://bio2rdf.org/interpro_vocabulary:x-cath> ?xc5.
+?s5 <http://bio2rdf.org/interpro_vocabulary:x-scop> ?xs5.
+?s5 <http://bio2rdf.org/interpro_vocabulary:x-pubmed> ?xp5.
+}
